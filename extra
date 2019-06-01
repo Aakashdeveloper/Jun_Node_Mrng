@@ -1,0 +1,108 @@
+/**********************
+    Basic Req
+************************/
+NodeJs: https://nodejs.org/en/
+Visual Studio Code: https://code.visualstudio.com/
+Github account: https://github.com/
+Gitbash: https://git-scm.com/downloads
+MongoDB: https://www.mongodb.com/
+Docker: https://www.docker.com/
+Nginx: http://nginx.org/en/download.html
+
+
+
+/**********************
+   List of Topics
+************************/
+
+Basic node
+Packages
+Local and global
+File modules
+Rest Api
+Connect with database
+OO Nodejs
+Api is Es6
+Building Dashboard
+Deploy App
+Graphql
+Login logout using JWT
+Docker
+Nginx
+Testing
+
+
+
+/****************
+    JSON
+***************/
+Javascript Object Notation
+[
+    {
+        name:"Aaa",
+        class:"AI",
+        lang:[
+                {
+                    ui:'Ang',
+                    back:'node'
+                }
+            ]
+    },
+    {
+        name:"BBB",
+        class:"UI"
+    }
+]
+
+/****************
+    Package.json
+***************/
+
+node -v
+> All command you have to run from teminal
+> You must be inside the folder
+Step1:
+ npm init
+step2:
+ Answer All questions
+step3:
+ type 'yes'
+
+/**************************
+    Step to install package
+*************************/
+> All command you have to run from teminal
+> You must be inside the folder
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>
+===>Local Dependecny
+===>Global  > help to create seed of app/start app/ monitor app
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Step1:
+     npm install  <packagename> / npm i <packagename>
+     npm i zone.js
+
+Windows:
+> Run  command prompt as admin
+> npm install -g <packagename>
+
+Mac/Linux
+> In the terminal
+> sudo npm install -g <packagename>
+
+>  npm i -g @aakashdeveloper/create-node-app
+>  generate testapp
+
+
+https://www.npmjs.com/package/@aakashdeveloper/create-node-app
+
+
+
+/**************************
+    Git Command
+*************************/
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/Jun_Node_Mrng.git
+git push -u origin master

@@ -1,0 +1,27 @@
+{
+  "name": "newapp",
+  "version": "1.0.0",
+  "description": "this app is about nodejs package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aakashdeveloper/Jun_Node_Mrng.git"
+  },
+  "keywords": [
+    "NodejS",
+    "express"
+  ],
+  "author": "Edureka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aakashdeveloper/Jun_Node_Mrng/issues"
+  },
+  "homepage": "https://github.com/Aakashdeveloper/Jun_Node_Mrng#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "zone.js": "^0.9.1"
+  }
+}
