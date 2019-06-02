@@ -106,3 +106,30 @@ git add .
 git commit -m "first commit"
 git remote add origin https://github.com/Aakashdeveloper/Jun_Node_Mrng.git
 git push -u origin master
+
+
+/***************************
+    Continuous Developement
+***************************/
+nodemon
+pm2
+
+npm install -g nodemon
+
+
+var => redeclare and reassign
+let => cannot redeclare but reassign
+const => cannot reassign & redeclare
+
+
+var a = 10
+
+var a
+a = 10
+
+
+function add(a,b) {
+    return a+b
+}
+
+const add = (a,b) => { return a+b }

@@ -1,3 +1,9 @@
-var a = 10
-var b =30
-console.log(a*b)
+var http = require('http');
+
+var server = http.createServer(function(req,res){
+    res.write("<h1>Hello to  NodeJS</h1>");
+    res.end();
+})
+
+
+server.listen(4500)

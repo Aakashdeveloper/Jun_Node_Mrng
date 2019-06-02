@@ -1,0 +1,11 @@
+Bill
+John
+
+
+You need to add user 
+if username already in the file than do not add
+else add new user
+John,
+Stephen,
+Stephen,
+aakash,
