@@ -1,0 +1,30 @@
+{
+  "name": "thirdap",
+  "version": "1.0.0",
+  "description": "about node with ejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aakashdeveloper/Jun_Node_Mrng.git"
+  },
+  "keywords": [
+    "node",
+    "ejs"
+  ],
+  "author": "edureka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aakashdeveloper/Jun_Node_Mrng/issues"
+  },
+  "homepage": "https://github.com/Aakashdeveloper/Jun_Node_Mrng#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
