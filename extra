@@ -133,3 +133,87 @@ function add(a,b) {
 }
 
 const add = (a,b) => { return a+b }
+
+
+
+var a = 10
+var b  = "my age is +a 
+my age is 10
+
+var c = `my age is ${a}`
+my age is 10
+
+var a=[1,2,334,5,6,8]
+
+
+
+function add(a,b){
+    return a+b
+}
+
+
+add(1,2)
+
+
+http://api.openweathermap.org/data/2.5/forecast/daily?q=London&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29
+
+///Babel
+
+npm i @babel/core @babel/preset-env @babel/register  babel-polyfill
+
+//////////////////////////////////////
+nosql
+
+sno  | English | Hindi |
+  1  |    80   |       |
+  2  |         |   80  |
+
+
+  {
+      sno:1,
+      english:80
+  },
+  {
+      sno:2,
+      hindi:80
+  }
+
+    SQl           | nosql
+    database         database
+    table            collections
+    row              document
+
+
+    See database
+    > show dbs 
+    > use <collection name>
+    > find
+    db.<collection name>.find()
+    db.<collection name>.find().pretty()
+CRUD
+Create read update delete
+
+//Create
+db.mynewcol.insert({_id:'second',name:'stephen'})
+
+//Read
+
+>> Selection
+    db.movies.find({rate:4}).pretty()
+    db.movies.find({rate:4,language:'English'}).pretty()
+
+>> Projection
+db.movies.find({rate:4},{_id:0,name:1}).pretty()
+db.movies.findOne()
+db.movies.find().limit(3).pretty()
+db.movies.find().limit(3).sort({rate:-1}).pretty()
+db.movies.find().skip(2).limit(3).sort({rate:-1}).pretty()
+
+//Update
+
+db.movies.update({rate:2},{$set:{rate:3}})
+db.movies.update({rate:4.6},{$set:{rate:4.7}},{multi:true})
+
+//Delete
+db.mydata.remove({name:'GOT'})
+db.mynewcol.remove({})

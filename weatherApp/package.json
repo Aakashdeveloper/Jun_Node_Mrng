@@ -1,0 +1,25 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "about the weather",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon start.js"
+  },
+  "keywords": [
+    "Node",
+    "ejs"
+  ],
+  "author": "Edureka",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "babel-polyfill": "^6.26.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  }
+}
