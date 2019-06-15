@@ -217,3 +217,7 @@ db.movies.update({rate:4.6},{$set:{rate:4.7}},{multi:true})
 //Delete
 db.mydata.remove({name:'GOT'})
 db.mynewcol.remove({})
+
+NODE_ENV= production PORT=8009 npm start
+
+PORT= 8009 NODE_ENV=Developement node server.js

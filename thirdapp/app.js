@@ -1,6 +1,6 @@
-const express = require('express');
-const chalk = require('chalk');
-const morgan = require('morgan');
+import express from 'express';
+import chalk from 'chalk';
+import morgan from 'morgan'
 const app = express();
 const port = 9000;
 

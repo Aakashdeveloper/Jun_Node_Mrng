@@ -1,0 +1,53 @@
+import express from 'express'
+const moviesRouter = express.Router();
+import mongodb from 'mongodb';
+const mdb = mongodb.MongoClient;
+const url = "mongodb://localhost:27017/";
+
+function router(menu){
+
+    moviesRouter.route('/')
+    .get((req,res) => {
+
+        mdb.connect(url, (err,db) => {
+            if(err){
+                throw err
+            }
+            const dbo = db.db('classdatabase');
+            dbo.collection('movies').find({}).toArray(
+                (err,data) =>{
+                    if(err) throw err;
+                    else {
+                        res.render('movies',{title:'Movies Page',
+                            menu, movies:data})
+                    }
+                }
+            )
+        })
+        
+    });
+    moviesRouter.route('/:id')
+        .get((req,res) => {
+            const id = req.params.id
+            mdb.connect(url, (err,db) => {
+                if(err){
+                    throw err;
+                }
+                const dbo = db.db('classdatabase');
+                dbo.collection('movies').findOne({_id:id}, (err, details) => {
+                    if(err){
+                        throw err;
+                    } else {
+                        res.render('details',{title:'Movies Details',
+                        menu, movies:details})
+                    }
+                })
+            })
+    })
+
+    return moviesRouter;
+}
+
+
+
+module.exports= router;
