@@ -221,3 +221,16 @@ db.mynewcol.remove({})
 NODE_ENV= production PORT=8009 npm start
 
 PORT= 8009 NODE_ENV=Developement node server.js
+
+/**************************
+    For login App
+*************************/
+jsonwebtoken
+bcryptjs
+ejs
+mongoose
+node-localstorage
+express
+body-parser
+
+npm i  jsonwebtoken bcryptjs ejs mongoose node-localstorage express body-parser
